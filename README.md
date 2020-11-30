@@ -5,3 +5,4 @@
 3. Update the values in the .env.development file(They are pretty self-explanatory)
 4. Run `docker-compose up` command at the root of the app.
 5. Fixer proxy can be accessed at `http://localhost:2300/api/exchange-rates?start_date=2020-01-01&end_date=2020-01-15&base=EUR&symbols=USD,JPY`
+6. The command-line report generation task can be run using `bundle exec rake currency_report:export`
