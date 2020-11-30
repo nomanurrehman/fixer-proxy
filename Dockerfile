@@ -18,4 +18,4 @@ RUN bundle install
 COPY . /app
 
 EXPOSE 2300
-# ENTRYPOINT ["bundle", "exec"]
+ENTRYPOINT ["bundle", "exec"]
