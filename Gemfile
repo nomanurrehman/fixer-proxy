@@ -2,9 +2,9 @@ source 'https://rubygems.org'
 
 gem 'rake'
 gem 'hanami',       '~> 1.3'
-gem 'hanami-model', '~> 1.3'
+# gem 'hanami-model', '~> 1.3'
 
-gem 'pg'
+# gem 'pg'
 
 group :development do
   # Code reloading
