@@ -1,31 +1,31 @@
 require 'bundler/setup'
 require 'hanami/setup'
-require 'hanami/model'
+# require 'hanami/model'
 require_relative '../lib/app'
 require_relative '../apps/api/application'
 
 Hanami.configure do
   mount Api::Application, at: '/api'
 
-  model do
-    ##
-    # Database adapter
-    #
-    # Available options:
-    #
-    #  * SQL adapter
-    #    adapter :sql, 'sqlite://db/app_development.sqlite3'
-    #    adapter :sql, 'postgresql://localhost/app_development'
-    #    adapter :sql, 'mysql://localhost/app_development'
-    #
-    adapter :sql, ENV.fetch('DATABASE_URL')
+#   model do
+#     ##
+#     # Database adapter
+#     #
+#     # Available options:
+#     #
+#     #  * SQL adapter
+#     #    adapter :sql, 'sqlite://db/app_development.sqlite3'
+#     #    adapter :sql, 'postgresql://localhost/app_development'
+#     #    adapter :sql, 'mysql://localhost/app_development'
+#     #
+#     adapter :sql, ENV.fetch('DATABASE_URL')
 
-    ##
-    # Migrations
-    #
-    migrations 'db/migrations'
-    schema     'db/schema.sql'
-  end
+#     ##
+#     # Migrations
+#     #
+#     migrations 'db/migrations'
+#     schema     'db/schema.sql'
+#   end
 
   mailer do
     root 'lib/app/mailers'
