@@ -3,7 +3,6 @@ source 'https://rubygems.org'
 gem 'rake'
 gem 'hanami',       '~> 1.3'
 gem 'hanami-model', '~> 1.3'
-gem 'bigdecimal', '~> 1.4'
 
 gem 'pg'
 
@@ -26,3 +25,7 @@ end
 group :production do
   # gem 'puma'
 end
+
+gem "faraday", "~> 1.1"
+
+gem "fast_excel", "~> 0.3.0"
